@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ModerlViewerを使ったWebARページ</title>
+  </head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>    
+    <script 
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+
+    </script>
+
+    <h1>AR Test App</h1>
+    <model-viewer  
+    ar
+    alt="Leoモデル"
+    src="Donut_01.glb" 
+    ios-src="Donut_01.usdz" 
+
+    style="width:800px;height:1000px;"                  
+
+    background-color="#70BCD1"
+    shadow-intensity="0.7"
+    camera-controls
+    interaction-prompt="auto"
+    auto-rotate ar magic-leap>
+
+
+    </model-viewer>
+  </body>
+</html>
